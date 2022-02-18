@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Feb 17 23:46:46 2022
+Analysis & Synthesis Status : Successful - Fri Feb 18 01:03:45 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : RC4
 Top-level Entity Name : RC4
 Family : MAX 10
-Total logic elements : 5
-    Total combinational functions : 5
+Total logic elements : 8
+    Total combinational functions : 8
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 14

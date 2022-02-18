@@ -22,10 +22,11 @@ component FA is
 	
 signal C: std_logic_vector(3 downto 1);
 
+
 begin 
 	I0: FA port map (X(0),Y(0),Cin,S(0),C(1));
-	I1: FA port map (X(1),Y(1),Cin,S(1),C(2));
-	I2: FA port map (X(2),Y(2),Cin,S(2),C(3));
-	I3: FA port map (X(3),Y(3),Cin,S(3),Co);
+	I1: FA port map (X(1),Y(1),C(1),S(1),C(2));
+	I2: FA port map (X(2),Y(2),C(2),S(2),C(3));
+	I3: FA port map (X(3),Y(3),C(3),S(3),Co);
 end ARC;
 

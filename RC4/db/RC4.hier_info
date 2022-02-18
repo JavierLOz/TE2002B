@@ -8,14 +8,11 @@ Y[1] => FA:I1.B
 Y[2] => FA:I2.B
 Y[3] => FA:I3.B
 Cin => FA:I0.Cin
-Cin => FA:I1.Cin
-Cin => FA:I2.Cin
-Cin => FA:I3.Cin
-S[0] << FA:I0.S
-S[1] << FA:I1.S
-S[2] << FA:I2.S
-S[3] << FA:I3.S
-Co << FA:I3.Co
+S[0] <= FA:I0.S
+S[1] <= FA:I1.S
+S[2] <= FA:I2.S
+S[3] <= FA:I3.S
+Co <= FA:I3.Co
 
 
 |RC4|FA:I0

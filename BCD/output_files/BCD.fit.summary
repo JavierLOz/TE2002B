@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Feb 17 23:57:01 2022
+Fitter Status : Successful - Fri Feb 18 01:46:00 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : BCD
 Top-level Entity Name : BCD
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Final
-Total logic elements : 5 / 8,064 ( < 1 % )
-    Total combinational functions : 5 / 8,064 ( < 1 % )
+Total logic elements : 12 / 8,064 ( < 1 % )
+    Total combinational functions : 12 / 8,064 ( < 1 % )
     Dedicated logic registers : 0 / 8,064 ( 0 % )
 Total registers : 0
 Total pins : 14 / 250 ( 6 % )

@@ -37,11 +37,13 @@ signal C: std_logic_vector(4 downto 1);
 signal D: std_logic_vector(4 downto 2);
 signal E: std_logic_vector(1 downto 0);
 signal F: std_logic_vector(3 downto 1);
+signal S: std_logic_vector(4 downto 1);
 
 begin
-	
+	D <= (C(4),C(3),C(2));
+	S <= (E(0),C(4),C(3),C(2));
 	I0: RC4 port map (A,B,Cin,C,E(0));
-	I1: Ajuste port map (C,E(1));
+	I1: Ajuste port map (S,E(1));
 	I2: masSeis port map (D,E(1),F);
 	Salida(0) <= C(1);
 	Salida(1) <= F(1);

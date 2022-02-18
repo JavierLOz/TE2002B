@@ -1,5 +1,5 @@
 Flow report for BCD
-Thu Feb 17 23:57:07 2022
+Fri Feb 18 01:46:06 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Feb 17 23:57:03 2022       ;
+; Flow Status                        ; Successful - Fri Feb 18 01:46:03 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; BCD                                         ;
 ; Top-level Entity Name              ; BCD                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08DAF484C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 5 / 8,064 ( < 1 % )                         ;
-;     Total combinational functions  ; 5 / 8,064 ( < 1 % )                         ;
+; Total logic elements               ; 12 / 8,064 ( < 1 % )                        ;
+;     Total combinational functions  ; 12 / 8,064 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 0 / 8,064 ( 0 % )                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 14 / 250 ( 6 % )                            ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/17/2022 23:56:47 ;
+; Start date & time ; 02/18/2022 01:45:47 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BCD                 ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 186426008277.164516380732980           ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 186426008277.164517034631732           ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -94,11 +94,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4785 MB             ; 00:00:19                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5677 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4671 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4798 MB             ; 00:00:02                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:27                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4783 MB             ; 00:00:19                           ;
+; Fitter               ; 00:00:03     ; 1.0                     ; 5678 MB             ; 00:00:04                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4672 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4798 MB             ; 00:00:02                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:26                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

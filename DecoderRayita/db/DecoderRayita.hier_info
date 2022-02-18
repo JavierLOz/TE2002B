@@ -1,0 +1,7 @@
+|DecoderRayita
+D => b.DATAIN
+D => c.DATAIN
+b <= D.DB_MAX_OUTPUT_PORT_TYPE
+c <= D.DB_MAX_OUTPUT_PORT_TYPE
+
+

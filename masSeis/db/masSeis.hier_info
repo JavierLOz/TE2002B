@@ -4,9 +4,9 @@ Z[2] => FA:I1.A
 Z[3] => S.IN1
 ajuste => HA:I0.B
 ajuste => FA:I1.B
-S[1] <= HA:I0.S
-S[2] <= FA:I1.S
-S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] << HA:I0.S
+S[2] << FA:I1.S
+S[3] << S.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |masSeis|HA:I0

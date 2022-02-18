@@ -1,5 +1,5 @@
 Fitter report for RC4
-Thu Feb 17 18:31:11 2022
+Thu Feb 17 23:46:53 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,33 +10,34 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. Incremental Compilation Preservation Summary
-  6. Incremental Compilation Partition Settings
-  7. Incremental Compilation Placement Preservation
-  8. Pin-Out File
-  9. Fitter Resource Usage Summary
- 10. Fitter Partition Statistics
- 11. Input Pins
- 12. Output Pins
- 13. Dual Purpose and Dedicated Pins
- 14. I/O Bank Usage
- 15. All Package Pins
- 16. I/O Assignment Warnings
- 17. Fitter Resource Utilization by Entity
- 18. Delay Chain Summary
- 19. Pad To Core Delay Chain Fanout
- 20. Routing Usage Summary
- 21. LAB Logic Elements
- 22. LAB Signals Sourced
- 23. LAB Signals Sourced Out
- 24. LAB Distinct Inputs
- 25. I/O Rules Summary
- 26. I/O Rules Details
- 27. I/O Rules Matrix
- 28. Fitter Device Options
- 29. Operating Settings and Conditions
- 30. Fitter Messages
- 31. Fitter Suppressed Messages
+  5. Ignored Assignments
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. Dual Purpose and Dedicated Pins
+ 15. I/O Bank Usage
+ 16. All Package Pins
+ 17. I/O Assignment Warnings
+ 18. Fitter Resource Utilization by Entity
+ 19. Delay Chain Summary
+ 20. Pad To Core Delay Chain Fanout
+ 21. Routing Usage Summary
+ 22. LAB Logic Elements
+ 23. LAB Signals Sourced
+ 24. LAB Signals Sourced Out
+ 25. LAB Distinct Inputs
+ 26. I/O Rules Summary
+ 27. I/O Rules Details
+ 28. I/O Rules Matrix
+ 29. Fitter Device Options
+ 30. Operating Settings and Conditions
+ 31. Fitter Messages
+ 32. Fitter Suppressed Messages
 
 
 
@@ -62,7 +63,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Feb 17 18:31:11 2022       ;
+; Fitter Status                      ; Successful - Thu Feb 17 23:46:53 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; RC4                                         ;
 ; Top-level Entity Name              ; RC4                                         ;
@@ -153,8 +154,24 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.3%      ;
+;     Processors 2-6         ;   0.2%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                    ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Location ;                ;              ; A[0]       ; PIN_C12       ; QSF Assignment ;
+; Location ;                ;              ; A[1]       ; PIN_D12       ; QSF Assignment ;
+; Location ;                ;              ; A[2]       ; PIN_C11       ; QSF Assignment ;
+; Location ;                ;              ; A[3]       ; PIN_C10       ; QSF Assignment ;
+; Location ;                ;              ; B[0]       ; PIN_A14       ; QSF Assignment ;
+; Location ;                ;              ; B[1]       ; PIN_A13       ; QSF Assignment ;
+; Location ;                ;              ; B[2]       ; PIN_B12       ; QSF Assignment ;
+; Location ;                ;              ; B[3]       ; PIN_A12       ; QSF Assignment ;
++----------+----------------+--------------+------------+---------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -195,7 +212,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files/RC4.pin.
+The pin-out file can be found in C:/Users/aaens/Desktop/TE2002B/RC4/output_files/RC4.pin.
 
 
 +---------------------------------------------------------------------+
@@ -243,7 +260,7 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.2% / 0.1% / 0.3%    ;
+; Peak interconnect usage (total/H/V)         ; 0.2% / 0.1% / 0.2%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
 ; Total fan-out                               ; 45                    ;
@@ -329,15 +346,15 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; A[0] ; C12   ; 7        ; 54           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; A[1] ; D12   ; 7        ; 51           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; A[2] ; C11   ; 7        ; 51           ; 54           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; A[3] ; C10   ; 7        ; 51           ; 54           ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; B[0] ; A14   ; 7        ; 58           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; B[1] ; A13   ; 7        ; 54           ; 54           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; B[2] ; B12   ; 7        ; 49           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; B[3] ; A12   ; 7        ; 54           ; 54           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 ; Cin  ; B14   ; 7        ; 56           ; 54           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; X[0] ; D14   ; 7        ; 56           ; 54           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; X[1] ; B11   ; 7        ; 49           ; 54           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; X[2] ; J11   ; 7        ; 49           ; 54           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; X[3] ; H12   ; 7        ; 49           ; 54           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; Y[0] ; E12   ; 7        ; 56           ; 54           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; Y[1] ; A7    ; 7        ; 49           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; Y[2] ; B12   ; 7        ; 49           ; 54           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; Y[3] ; C10   ; 7        ; 51           ; 54           ; 28           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -398,14 +415,14 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; A4       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A7       ; 445        ; 7        ; Y[1]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A8       ; 447        ; 7        ; Co                                             ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A9       ; 449        ; 7        ; S[3]                                           ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A10      ; 439        ; 7        ; S[2]                                           ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A11      ; 437        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A12      ; 435        ; 7        ; B[3]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; A13      ; 433        ; 7        ; B[1]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; A14      ; 425        ; 7        ; B[0]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; A12      ; 435        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A13      ; 433        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A14      ; 425        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A15      ; 421        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A16      ; 419        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A17      ; 407        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -468,8 +485,8 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; B8       ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; S[1]                                           ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; B11      ; 443        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B12      ; 441        ; 7        ; B[2]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; B11      ; 443        ; 7        ; X[1]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 441        ; 7        ; Y[2]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B14      ; 427        ; 7        ; Cin                                            ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; B15      ; 423        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
@@ -489,9 +506,9 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; C7       ; 467        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C8       ; 465        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C9       ; 450        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; C10      ; 442        ; 7        ; A[3]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; C11      ; 440        ; 7        ; A[2]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; C12      ; 436        ; 7        ; A[0]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; C10      ; 442        ; 7        ; Y[3]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; C11      ; 440        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; C12      ; 436        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C13      ; 426        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C14      ; 424        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C15      ; 418        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -513,9 +530,9 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; D9       ; 474        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D11      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; D12      ; 438        ; 7        ; A[1]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
+; D12      ; 438        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D13      ; 431        ; 7        ; S[0]                                           ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
-; D14      ; 428        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; D14      ; 428        ; 7        ; X[0]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D15      ; 404        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D16      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D17      ; 389        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -535,7 +552,7 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; E9       ; 478        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E10      ; 466        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E11      ; 464        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; E12      ; 429        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; E12      ; 429        ; 7        ; Y[0]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E13      ; 430        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E14      ; 406        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E15      ; 390        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -601,7 +618,7 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; H9       ; 482        ; 8        ; ~ALTERA_nCONFIG~ / RESERVED_INPUT              ; input  ; 2.5 V Schmitt Trigger ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H10      ; 480        ; 8        ; ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H11      ; 470        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; H12      ; 444        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; H12      ; 444        ; 7        ; X[3]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H13      ; 432        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H14      ; 420        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H15      ;            ; --       ; VCCA2                                          ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -622,7 +639,7 @@ The pin-out file can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files
 ; J8       ; 4          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J9       ; 6          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J10      ; 468        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; J11      ; 446        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; J11      ; 446        ; 7        ; X[2]                                           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J12      ; 434        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J13      ; 422        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J14      ; 368        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -890,15 +907,23 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; S[2]     ; Incomplete set of assignments ;
 ; S[3]     ; Incomplete set of assignments ;
 ; Co       ; Incomplete set of assignments ;
-; A[0]     ; Incomplete set of assignments ;
-; B[0]     ; Incomplete set of assignments ;
+; X[0]     ; Incomplete set of assignments ;
+; Y[0]     ; Incomplete set of assignments ;
 ; Cin      ; Incomplete set of assignments ;
-; A[1]     ; Incomplete set of assignments ;
-; B[1]     ; Incomplete set of assignments ;
-; A[2]     ; Incomplete set of assignments ;
-; B[2]     ; Incomplete set of assignments ;
-; A[3]     ; Incomplete set of assignments ;
-; B[3]     ; Incomplete set of assignments ;
+; X[1]     ; Incomplete set of assignments ;
+; Y[1]     ; Incomplete set of assignments ;
+; X[2]     ; Incomplete set of assignments ;
+; Y[2]     ; Incomplete set of assignments ;
+; X[3]     ; Incomplete set of assignments ;
+; Y[3]     ; Incomplete set of assignments ;
+; X[0]     ; Missing location assignment   ;
+; Y[0]     ; Missing location assignment   ;
+; X[1]     ; Missing location assignment   ;
+; Y[1]     ; Missing location assignment   ;
+; X[2]     ; Missing location assignment   ;
+; Y[2]     ; Missing location assignment   ;
+; X[3]     ; Missing location assignment   ;
+; Y[3]     ; Missing location assignment   ;
 +----------+-------------------------------+
 
 
@@ -930,15 +955,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; S[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; S[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; Co   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; A[0] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; B[0] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; Cin  ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; A[1] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; B[1] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; A[2] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; B[2] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; A[3] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; B[3] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; X[0] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; Y[0] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; Cin  ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; X[1] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; Y[1] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; X[2] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; Y[2] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; X[3] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; Y[3] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
 +------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -947,30 +972,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------+-------------------+---------+
 ; Source Pin / Fanout    ; Pad To Core Index ; Setting ;
 +------------------------+-------------------+---------+
-; A[0]                   ;                   ;         ;
+; X[0]                   ;                   ;         ;
 ;      - FA:I0|HA:I1|S~0 ; 1                 ; 6       ;
-; B[0]                   ;                   ;         ;
+; Y[0]                   ;                   ;         ;
 ;      - FA:I0|HA:I1|S~0 ; 0                 ; 6       ;
 ; Cin                    ;                   ;         ;
-;      - FA:I0|HA:I1|S~0 ; 1                 ; 6       ;
+;      - FA:I0|HA:I1|S~0 ; 0                 ; 6       ;
+;      - FA:I1|HA:I1|S~0 ; 0                 ; 6       ;
+;      - FA:I2|HA:I1|S~0 ; 0                 ; 6       ;
+;      - FA:I3|HA:I1|S~0 ; 0                 ; 6       ;
+;      - FA:I3|Co~0      ; 0                 ; 6       ;
+; X[1]                   ;                   ;         ;
 ;      - FA:I1|HA:I1|S~0 ; 1                 ; 6       ;
-;      - FA:I2|HA:I1|S~0 ; 1                 ; 6       ;
+; Y[1]                   ;                   ;         ;
+;      - FA:I1|HA:I1|S~0 ; 1                 ; 6       ;
+; X[2]                   ;                   ;         ;
+;      - FA:I2|HA:I1|S~0 ; 0                 ; 6       ;
+; Y[2]                   ;                   ;         ;
+;      - FA:I2|HA:I1|S~0 ; 0                 ; 6       ;
+; X[3]                   ;                   ;         ;
+;      - FA:I3|HA:I1|S~0 ; 0                 ; 6       ;
+;      - FA:I3|Co~0      ; 0                 ; 6       ;
+; Y[3]                   ;                   ;         ;
 ;      - FA:I3|HA:I1|S~0 ; 1                 ; 6       ;
 ;      - FA:I3|Co~0      ; 1                 ; 6       ;
-; A[1]                   ;                   ;         ;
-;      - FA:I1|HA:I1|S~0 ; 0                 ; 6       ;
-; B[1]                   ;                   ;         ;
-;      - FA:I1|HA:I1|S~0 ; 0                 ; 6       ;
-; A[2]                   ;                   ;         ;
-;      - FA:I2|HA:I1|S~0 ; 0                 ; 6       ;
-; B[2]                   ;                   ;         ;
-;      - FA:I2|HA:I1|S~0 ; 0                 ; 6       ;
-; A[3]                   ;                   ;         ;
-;      - FA:I3|HA:I1|S~0 ; 0                 ; 6       ;
-;      - FA:I3|Co~0      ; 0                 ; 6       ;
-; B[3]                   ;                   ;         ;
-;      - FA:I3|HA:I1|S~0 ; 0                 ; 6       ;
-;      - FA:I3|Co~0      ; 0                 ; 6       ;
 +------------------------+-------------------+---------+
 
 
@@ -980,14 +1005,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
 ; Block interconnects   ; 19 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 0 / 5,382 ( 0 % )      ;
-; C4 interconnects      ; 18 / 106,704 ( < 1 % ) ;
-; Direct links          ; 1 / 148,641 ( < 1 % )  ;
+; C16 interconnects     ; 1 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 20 / 106,704 ( < 1 % ) ;
+; Direct links          ; 0 / 148,641 ( 0 % )    ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
 ; Local interconnects   ; 0 / 49,760 ( 0 % )     ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )        ;
 ; R24 interconnects     ; 0 / 5,406 ( 0 % )      ;
-; R4 interconnects      ; 9 / 147,764 ( < 1 % )  ;
+; R4 interconnects      ; 7 / 147,764 ( < 1 % )  ;
 +-----------------------+------------------------+
 
 
@@ -1109,30 +1134,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
-+--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
-+--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 14        ; 0            ; 14        ; 0            ; 0            ; 14        ; 14        ; 0            ; 14        ; 14        ; 0            ; 5            ; 0            ; 0            ; 9            ; 0            ; 5            ; 9            ; 0            ; 0            ; 0            ; 5            ; 0            ; 0            ; 0            ; 0            ; 0            ; 14        ; 0            ; 0            ;
-; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 14           ; 0         ; 14           ; 14           ; 0         ; 0         ; 14           ; 0         ; 0         ; 14           ; 9            ; 14           ; 14           ; 5            ; 14           ; 9            ; 5            ; 14           ; 14           ; 14           ; 9            ; 14           ; 14           ; 14           ; 14           ; 14           ; 0         ; 14           ; 14           ;
-; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; S[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; S[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; S[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; S[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Co                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Cin                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; A[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-+--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Total Pass         ; 6            ; 0            ; 6            ; 0            ; 0            ; 14        ; 6            ; 0            ; 14        ; 14        ; 0            ; 5            ; 0            ; 0            ; 9            ; 0            ; 5            ; 9            ; 0            ; 0            ; 0            ; 5            ; 0            ; 0            ; 0            ; 0            ; 0            ; 14        ; 0            ; 0            ;
+; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; Total Inapplicable ; 8            ; 14           ; 8            ; 14           ; 14           ; 0         ; 8            ; 14           ; 0         ; 0         ; 14           ; 9            ; 14           ; 14           ; 5            ; 14           ; 9            ; 5            ; 14           ; 14           ; 14           ; 9            ; 14           ; 14           ; 14           ; 14           ; 14           ; 0         ; 14           ; 14           ;
+; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; S[0]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; S[1]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; S[2]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; S[3]               ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Co                 ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; X[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Cin                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; X[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; X[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; X[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; Y[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
++--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------+
@@ -1197,6 +1222,7 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Critical Warning (169085): No exact pin location assignment(s) for 8 pins of 14 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'RC4.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1207,6 +1233,29 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
+Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
+    Info (176211): Number of I/O pins in group: 8 (unused VREF, 2.5V VCCIO, 8 input, 0 output, 0 bidirectional)
+        Info (176212): I/O standards used: 2.5 V.
+Info (176215): I/O bank details before I/O pin placement
+    Info (176214): Statistics of I/O banks
+        Info (176213): I/O bank number 1A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  16 pins available
+        Info (176213): I/O bank number 1B does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  20 pins available
+        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  36 pins available
+        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  48 pins available
+        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  48 pins available
+        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
+        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  60 pins available
+        Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 6 total pin(s) used --  46 pins available
+        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  32 pins available
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "A[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "A[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "A[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "A[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "B[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "B[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "B[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "B[3]" is assigned to location or region, but does not exist in design
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
@@ -1229,10 +1278,11 @@ Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
-Info (144001): Generated suppressed messages file C:/Users/aaens/Desktop/Quartus/RC4/output_files/RC4.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5766 megabytes
-    Info: Processing ended: Thu Feb 17 18:31:11 2022
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info (144001): Generated suppressed messages file C:/Users/aaens/Desktop/TE2002B/RC4/output_files/RC4.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 5765 megabytes
+    Info: Processing ended: Thu Feb 17 23:46:53 2022
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:08
 
@@ -1240,6 +1290,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/aaens/Desktop/Quartus/RC4/output_files/RC4.fit.smsg.
+The suppressed messages can be found in C:/Users/aaens/Desktop/TE2002B/RC4/output_files/RC4.fit.smsg.
 
 

@@ -1,0 +1,196 @@
+|BCD
+A[0] => RC4:I0.X[0]
+A[1] => RC4:I0.X[1]
+A[2] => RC4:I0.X[2]
+A[3] => RC4:I0.X[3]
+B[0] => RC4:I0.Y[0]
+B[1] => RC4:I0.Y[1]
+B[2] => RC4:I0.Y[2]
+B[3] => RC4:I0.Y[3]
+Cin => RC4:I0.Cin
+Salida[0] <= RC4:I0.S[0]
+Salida[1] <= masSeis:I2.S[1]
+Salida[2] <= masSeis:I2.S[2]
+Salida[3] <= masSeis:I2.S[3]
+Co <= Ajuste:I1.ajuste
+
+
+|BCD|RC4:I0
+X[0] => FA:I0.A
+X[1] => FA:I1.A
+X[2] => FA:I2.A
+X[3] => FA:I3.A
+Y[0] => FA:I0.B
+Y[1] => FA:I1.B
+Y[2] => FA:I2.B
+Y[3] => FA:I3.B
+Cin => FA:I0.Cin
+Cin => FA:I1.Cin
+Cin => FA:I2.Cin
+Cin => FA:I3.Cin
+S[0] <= FA:I0.S
+S[1] <= FA:I1.S
+S[2] <= FA:I2.S
+S[3] <= FA:I3.S
+Co <= FA:I3.Co
+
+
+|BCD|RC4:I0|FA:I0
+A => HA:I0.A
+B => HA:I0.B
+Cin => HA:I1.B
+S <= HA:I1.S
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I0|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I0|HA:I1
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I1
+A => HA:I0.A
+B => HA:I0.B
+Cin => HA:I1.B
+S <= HA:I1.S
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I1|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I1|HA:I1
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I2
+A => HA:I0.A
+B => HA:I0.B
+Cin => HA:I1.B
+S <= HA:I1.S
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I2|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I2|HA:I1
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I3
+A => HA:I0.A
+B => HA:I0.B
+Cin => HA:I1.B
+S <= HA:I1.S
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I3|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|RC4:I0|FA:I3|HA:I1
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|Ajuste:I1
+Z[1] => ajuste.IN0
+Z[2] => ajuste.IN0
+Z[3] => ajuste.IN1
+Z[3] => ajuste.IN1
+Z[4] => ajuste.IN1
+ajuste <= ajuste.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|masSeis:I2
+Z[1] => HA:I0.A
+Z[2] => FA:I1.A
+Z[3] => S.IN1
+ajuste => HA:I0.B
+ajuste => FA:I1.B
+S[1] <= HA:I0.S
+S[2] <= FA:I1.S
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|masSeis:I2|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|masSeis:I2|FA:I1
+A => HA:I0.A
+B => HA:I0.B
+Cin => HA:I1.B
+S <= HA:I1.S
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|masSeis:I2|FA:I1|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD|masSeis:I2|FA:I1|HA:I1
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -7,7 +7,7 @@ library IEEE;
 use IEEE.std_logic_1164.ALL;
 
 Entity RC4 is
-	port (A,B : in std_logic_vector(3 downto 0);
+	port (X,Y : in std_logic_vector(3 downto 0);
 			Cin: in std_logic;
 			S: out std_logic_vector(3 downto 0);
 			Co: out std_logic);
@@ -23,9 +23,9 @@ component FA is
 signal C: std_logic_vector(3 downto 1);
 
 begin 
-	I0: FA port map (A(0),B(0),Cin,S(0),C(1));
-	I1: FA port map (A(1),B(1),Cin,S(1),C(2));
-	I2: FA port map (A(2),B(2),Cin,S(2),C(3));
-	I3: FA port map (A(3),B(3),Cin,S(3),Co);
+	I0: FA port map (X(0),Y(0),Cin,S(0),C(1));
+	I1: FA port map (X(1),Y(1),Cin,S(1),C(2));
+	I2: FA port map (X(2),Y(2),Cin,S(2),C(3));
+	I3: FA port map (X(3),Y(3),Cin,S(3),Co);
 end ARC;
 

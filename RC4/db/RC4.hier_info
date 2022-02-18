@@ -1,12 +1,12 @@
 |RC4
-A[0] => FA:I0.A
-A[1] => FA:I1.A
-A[2] => FA:I2.A
-A[3] => FA:I3.A
-B[0] => FA:I0.B
-B[1] => FA:I1.B
-B[2] => FA:I2.B
-B[3] => FA:I3.B
+X[0] => FA:I0.A
+X[1] => FA:I1.A
+X[2] => FA:I2.A
+X[3] => FA:I3.A
+Y[0] => FA:I0.B
+Y[1] => FA:I1.B
+Y[2] => FA:I2.B
+Y[3] => FA:I3.B
 Cin => FA:I0.Cin
 Cin => FA:I1.Cin
 Cin => FA:I2.Cin

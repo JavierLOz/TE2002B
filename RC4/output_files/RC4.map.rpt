@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RC4
-Thu Feb 17 18:31:04 2022
+Thu Feb 17 23:46:46 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 17 18:31:04 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 17 23:46:46 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; RC4                                         ;
 ; Top-level Entity Name              ; RC4                                         ;
@@ -171,9 +171,9 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path               ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; ../HA/HA.vhd                     ; yes             ; User VHDL File  ; C:/Users/aaens/Desktop/Quartus/HA/HA.vhd   ;         ;
-; ../FA/FA.vhd                     ; yes             ; User VHDL File  ; C:/Users/aaens/Desktop/Quartus/FA/FA.vhd   ;         ;
-; RC4.vhd                          ; yes             ; User VHDL File  ; C:/Users/aaens/Desktop/Quartus/RC4/RC4.vhd ;         ;
+; ../HA/HA.vhd                     ; yes             ; User VHDL File  ; C:/Users/aaens/Desktop/TE2002B/HA/HA.vhd   ;         ;
+; ../FA/FA.vhd                     ; yes             ; User VHDL File  ; C:/Users/aaens/Desktop/TE2002B/FA/FA.vhd   ;         ;
+; RC4.vhd                          ; yes             ; User VHDL File  ; C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vhd ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
 
 
@@ -299,23 +299,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 17 18:30:54 2022
+    Info: Processing started: Thu Feb 17 23:46:36 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RC4 -c RC4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aaens/desktop/quartus/ha/ha.vhd
-    Info (12022): Found design unit 1: HA-ARC File: C:/Users/aaens/Desktop/Quartus/HA/HA.vhd Line: 15
-    Info (12023): Found entity 1: HA File: C:/Users/aaens/Desktop/Quartus/HA/HA.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aaens/desktop/quartus/fa/fa.vhd
-    Info (12022): Found design unit 1: FA-ARC File: C:/Users/aaens/Desktop/Quartus/FA/FA.vhd Line: 15
-    Info (12023): Found entity 1: FA File: C:/Users/aaens/Desktop/Quartus/FA/FA.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aaens/desktop/te2002b/ha/ha.vhd
+    Info (12022): Found design unit 1: HA-ARC File: C:/Users/aaens/Desktop/TE2002B/HA/HA.vhd Line: 15
+    Info (12023): Found entity 1: HA File: C:/Users/aaens/Desktop/TE2002B/HA/HA.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aaens/desktop/te2002b/fa/fa.vhd
+    Info (12022): Found design unit 1: FA-ARC File: C:/Users/aaens/Desktop/TE2002B/FA/FA.vhd Line: 15
+    Info (12023): Found entity 1: FA File: C:/Users/aaens/Desktop/TE2002B/FA/FA.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file rc4.vhd
-    Info (12022): Found design unit 1: RC4-ARC File: C:/Users/aaens/Desktop/Quartus/RC4/RC4.vhd Line: 16
-    Info (12023): Found entity 1: RC4 File: C:/Users/aaens/Desktop/Quartus/RC4/RC4.vhd Line: 9
+    Info (12022): Found design unit 1: RC4-ARC File: C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vhd Line: 16
+    Info (12023): Found entity 1: RC4 File: C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vhd Line: 9
 Info (12127): Elaborating entity "RC4" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at RC4.vhd(23): object "C" assigned a value but never read File: C:/Users/aaens/Desktop/Quartus/RC4/RC4.vhd Line: 23
-Info (12128): Elaborating entity "FA" for hierarchy "FA:I0" File: C:/Users/aaens/Desktop/Quartus/RC4/RC4.vhd Line: 26
-Info (12128): Elaborating entity "HA" for hierarchy "FA:I0|HA:I0" File: C:/Users/aaens/Desktop/Quartus/FA/FA.vhd Line: 24
+Warning (10036): Verilog HDL or VHDL warning at RC4.vhd(23): object "C" assigned a value but never read File: C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vhd Line: 23
+Info (12128): Elaborating entity "FA" for hierarchy "FA:I0" File: C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vhd Line: 26
+Info (12128): Elaborating entity "HA" for hierarchy "FA:I0|HA:I0" File: C:/Users/aaens/Desktop/TE2002B/FA/FA.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -325,8 +325,8 @@ Info (21057): Implemented 19 device resources after synthesis - the final resour
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Thu Feb 17 18:31:04 2022
+    Info: Processing ended: Thu Feb 17 23:46:46 2022
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:20
 
 

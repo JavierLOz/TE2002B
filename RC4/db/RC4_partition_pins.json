@@ -24,11 +24,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "X[0]",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "Y[0]",
 					"strict" : false
 				},
 				{
@@ -36,27 +36,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "X[1]",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "Y[1]",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "X[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "Y[2]",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "X[3]",
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "Y[3]",
 					"strict" : false
 				}
 			]

@@ -17,13 +17,18 @@ architecture ARC of masSeis is
 component FA is
 	port (A,B,Cin:in std_logic;
 		S,Co:out std_logic);
-	end component FA;
-
-signal C: std_logic_vector (2 downto 0)	
+	end component FA;	
 	
 component HA is
 	port (A,B:in std_logic;
 		S,Co:out std_logic);
 	end component HA;
 	
-signal D: std_logic_vector (2 downto 0)
+signal C: std_logic_vector (2 downto 1);
+
+begin
+	I0: HA port map (Z(1),ajuste,S(1),C(1));
+	I1: FA port map (Z(2),ajuste,C(1),S(2),C(2));
+	S(3) <= C(2) xor Z(3);
+	
+end ARC;

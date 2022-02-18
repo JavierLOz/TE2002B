@@ -1,0 +1,9 @@
+|Ajuste
+Z[1] => ajuste.IN0
+Z[2] => ajuste.IN0
+Z[3] => ajuste.IN1
+Z[3] => ajuste.IN1
+Z[4] => ajuste.IN1
+ajuste <= ajuste.DB_MAX_OUTPUT_PORT_TYPE
+
+

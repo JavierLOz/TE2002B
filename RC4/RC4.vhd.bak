@@ -1,0 +1,14 @@
+-- Ripple Carry Adder 4 bits 	--
+-- Aquiles Ensminger 			--
+-- A01781243 						--
+
+--Librerias
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+
+Entity RC4 is
+	port (A,B : in std_logic_vector(3 downto 0);
+			Cin: in std_logic;
+			S: out std_logic_vector(3 downto 0);
+			Co: outn std_logic);
+end RC4;

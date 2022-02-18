@@ -1,0 +1,20 @@
+|Codificador
+A => N.IN0
+A => X.DATAIN
+B => N.IN1
+B => MUX2a1:I0.A
+C => Z.IN1
+D => MUX2a1:I0.S
+X <= A.DB_MAX_OUTPUT_PORT_TYPE
+Y <= N.DB_MAX_OUTPUT_PORT_TYPE
+Z <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Codificador|MUX2a1:I0
+S => Selector0.IN3
+S => Selector0.IN1
+A => Selector0.IN4
+B => Selector0.IN5
+Salida <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+

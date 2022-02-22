@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Salida1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Salida2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Cin",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Entrada4[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

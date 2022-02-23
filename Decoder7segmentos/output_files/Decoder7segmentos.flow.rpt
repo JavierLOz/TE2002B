@@ -1,5 +1,5 @@
 Flow report for Decoder7segmentos
-Thu Feb 17 17:33:06 2022
+Tue Feb 22 17:47:35 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Feb 17 17:33:02 2022       ;
+; Flow Status                        ; Successful - Tue Feb 22 17:47:35 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Decoder7segmentos                           ;
 ; Top-level Entity Name              ; Decoder7segmentos                           ;
@@ -98,7 +98,20 @@ refer to the applicable agreement for further details.
 ; Fitter               ; 00:00:06     ; 1.0                     ; 5762 MB             ; 00:00:09                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4835 MB             ; 00:00:03                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:38                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4633 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4634 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4625 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4634 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4634 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4634 MB             ; 00:00:01                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:00:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +124,19 @@ refer to the applicable agreement for further details.
 ; Fitter               ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -121,6 +147,19 @@ quartus_map --read_settings_files=on --write_settings_files=off Decoder7segmento
 quartus_fit --read_settings_files=off --write_settings_files=off Decoder7segmentos -c Decoder7segmentos
 quartus_asm --read_settings_files=off --write_settings_files=off Decoder7segmentos -c Decoder7segmentos
 quartus_sta Decoder7segmentos -c Decoder7segmentos
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Waveform.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/ Decoder7segmentos -c Decoder7segmentos
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Waveform.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Waveform.vwf.vht
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Decoder7segmentos.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Decoder7segmentos.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/ Decoder7segmentos -c Decoder7segmentos
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Decoder7segmentos.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Decoder7segmentos.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/ Decoder7segmentos -c Decoder7segmentos
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Decoder7segmentos.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Decoder7segmentos.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/ Decoder7segmentos -c Decoder7segmentos
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Decoder7segmentos.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Decoder7segmentos.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/ Decoder7segmentos -c Decoder7segmentos
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Decoder7segmentos -c Decoder7segmentos --vector_source=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/Decoder7segmentos.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/Decoder7segmentos.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/Decoder7segmentos/simulation/qsim/ Decoder7segmentos -c Decoder7segmentos
 
 
 

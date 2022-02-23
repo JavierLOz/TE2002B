@@ -1,0 +1,53 @@
+|Contador4bits
+CLK => Q[0].CLK
+CLK => Q[1].CLK
+CLK => Q[2].CLK
+CLK => Q[3].CLK
+RST => Q[0].ACLR
+RST => Q[1].ACLR
+RST => Q[2].ACLR
+RST => Q[3].ACLR
+Cuenta[0] << Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Cuenta[1] << Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Cuenta[2] << Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Cuenta[3] << Q[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|MasUno:I0
+A[0] => HA:I0.A
+A[1] => HA:I1.A
+A[2] => HA:I2.A
+A[3] => Z.IN1
+Z[0] <= HA:I0.S
+Z[1] <= HA:I1.S
+Z[2] <= HA:I2.S
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|MasUno:I0|HA:I0
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|MasUno:I0|HA:I1
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Contador4bits|MasUno:I0|HA:I2
+A => S.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+

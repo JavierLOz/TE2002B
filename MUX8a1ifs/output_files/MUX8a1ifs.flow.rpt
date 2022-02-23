@@ -1,5 +1,5 @@
 Flow report for MUX8a1ifs
-Thu Feb 17 19:12:35 2022
+Tue Feb 22 17:57:37 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Feb 17 19:12:32 2022       ;
+; Flow Status                        ; Successful - Tue Feb 22 17:57:37 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; MUX8a1ifs                                   ;
 ; Top-level Entity Name              ; MUX8a1ifs                                   ;
@@ -98,7 +98,9 @@ refer to the applicable agreement for further details.
 ; Fitter               ; 00:00:06     ; 1.0                     ; 5765 MB             ; 00:00:09                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4838 MB             ; 00:00:02                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:35                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +113,8 @@ refer to the applicable agreement for further details.
 ; Fitter               ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -121,6 +125,8 @@ quartus_map --read_settings_files=on --write_settings_files=off MUX8a1ifs -c MUX
 quartus_fit --read_settings_files=off --write_settings_files=off MUX8a1ifs -c MUX8a1ifs
 quartus_asm --read_settings_files=off --write_settings_files=off MUX8a1ifs -c MUX8a1ifs
 quartus_sta MUX8a1ifs -c MUX8a1ifs
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MUX8a1ifs -c MUX8a1ifs --vector_source=C:/Users/aaens/Desktop/TE2002B/MUX8a1ifs/MUX8a1ifs.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/MUX8a1ifs/simulation/qsim/MUX8a1ifs.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/MUX8a1ifs/simulation/qsim/ MUX8a1ifs -c MUX8a1ifs
 
 
 

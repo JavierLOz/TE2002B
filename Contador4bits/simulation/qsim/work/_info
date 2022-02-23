@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aaens/Desktop/TE2002B/Contador4bits/simulation/qsim
+Econtador4bits
+Z1 w1645580440
+Z2 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z3 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+R0
+Z10 8Contador4bits.vho
+Z11 FContador4bits.vho
+l0
+L90
+VhDGWaUUZTRR;WOSW5mLH11
+!s100 ^U_6Gj1e^m`5VjP7Mln[12
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1645580440
+!i10b 1
+Z14 !s108 1645580440.000000
+Z15 !s90 -work|work|Contador4bits.vho|
+Z16 !s107 Contador4bits.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 13 contador4bits 0 22 hDGWaUUZTRR;WOSW5mLH11
+l147
+L107
+VI0]O0iY]SHM]kU;JR:kCl0
+!s100 iIkhMKLdYM8kQA?Ij]EDN1
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Econtador4bits_vhd_vec_tst
+Z19 w1645580438
+R7
+R8
+R0
+Z20 8Contador4bits.vwf.vht
+Z21 FContador4bits.vwf.vht
+l0
+L31
+V<Y?>64@h`gcV4WWeK`4LI2
+!s100 YYDo^W7z7QIlFXXDbULZ<0
+R12
+32
+Z22 !s110 1645580441
+!i10b 1
+R14
+Z23 !s90 -work|work|Contador4bits.vwf.vht|
+Z24 !s107 Contador4bits.vwf.vht|
+!i113 1
+R17
+R18
+Acontador4bits_arch
+R7
+R8
+DEx4 work 25 contador4bits_vhd_vec_tst 0 22 <Y?>64@h`gcV4WWeK`4LI2
+l46
+L33
+V]hj_UNAMm6Z5eR66K?6QU3
+!s100 jHgVUdomWz_CBW=9N@V[M0
+R12
+32
+R22
+!i10b 1
+R14
+R23
+R24
+!i113 1
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18

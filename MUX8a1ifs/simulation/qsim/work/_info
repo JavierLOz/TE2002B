@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aaens/Desktop/TE2002B/MUX8a1ifs/simulation/qsim
+Ehard_block
+Z1 w1645574257
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8MUX8a1ifs.vho
+Z9 FMUX8a1ifs.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1645574257
+!i10b 1
+Z12 !s108 1645574257.000000
+Z13 !s90 -work|work|MUX8a1ifs.vho|
+Z14 !s107 MUX8a1ifs.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emux8a1ifs
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L88
+V`<@:ZlB0oaQWE`Z=o<35<3
+!s100 <A;RPT_]cbGhzZP[z9jUS0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 mux8a1ifs 0 22 `<@:ZlB0oaQWE`Z=o<35<3
+l169
+L118
+VF>>LX^?kD3Bz:j50CdV?T1
+!s100 L]FObA]gBJbI5Zz`7K9Jz2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Emux8a1ifs_vhd_vec_tst
+Z17 w1645574255
+R5
+R6
+R0
+Z18 8MUX8a1ifs.vwf.vht
+Z19 FMUX8a1ifs.vwf.vht
+l0
+L31
+VGcC9j7TGT9UFD4U3eWjfE1
+!s100 ;DZPKIzbk[QB`Qkl;N[KD2
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|MUX8a1ifs.vwf.vht|
+Z21 !s107 MUX8a1ifs.vwf.vht|
+!i113 1
+R15
+R16
+Amux8a1ifs_arch
+R5
+R6
+DEx4 work 21 mux8a1ifs_vhd_vec_tst 0 22 GcC9j7TGT9UFD4U3eWjfE1
+l60
+L33
+VIdMjSGP_EV3M^GQfLO6^X3
+!s100 `o;51[G5lz76g8R2?2zQ<0
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

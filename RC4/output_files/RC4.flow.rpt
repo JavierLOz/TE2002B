@@ -1,5 +1,5 @@
 Flow report for RC4
-Fri Feb 18 01:03:58 2022
+Tue Feb 22 18:01:12 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 18 01:03:55 2022       ;
+; Flow Status                        ; Successful - Tue Feb 22 18:01:12 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; RC4                                         ;
 ; Top-level Entity Name              ; RC4                                         ;
@@ -98,7 +98,9 @@ refer to the applicable agreement for further details.
 ; Fitter               ; 00:00:05     ; 1.0                     ; 5765 MB             ; 00:00:08                           ;
 ; Assembler            ; 00:00:02     ; 1.0                     ; 4679 MB             ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4834 MB             ; 00:00:02                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:32                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4632 MB             ; 00:00:01                           ;
+; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:34                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +113,8 @@ refer to the applicable agreement for further details.
 ; Fitter               ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-338OCB85  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -121,6 +125,8 @@ quartus_map --read_settings_files=on --write_settings_files=off RC4 -c RC4
 quartus_fit --read_settings_files=off --write_settings_files=off RC4 -c RC4
 quartus_asm --read_settings_files=off --write_settings_files=off RC4 -c RC4
 quartus_sta RC4 -c RC4
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off RC4 -c RC4 --vector_source=C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vwf --testbench_file=C:/Users/aaens/Desktop/TE2002B/RC4/simulation/qsim/RC4.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/Users/aaens/Desktop/TE2002B/RC4/simulation/qsim/ RC4 -c RC4
 
 
 

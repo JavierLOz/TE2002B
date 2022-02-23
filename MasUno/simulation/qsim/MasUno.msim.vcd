@@ -1,0 +1,453 @@
+$comment
+	File created using the following command:
+		vcd file MasUno.msim.vcd -direction
+$end
+$date
+	Tue Feb 22 19:37:28 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module masuno_vhd_vec_tst $end
+$var wire 1 ! A [3] $end
+$var wire 1 " A [2] $end
+$var wire 1 # A [1] $end
+$var wire 1 $ A [0] $end
+$var wire 1 % Z [3] $end
+$var wire 1 & Z [2] $end
+$var wire 1 ' Z [1] $end
+$var wire 1 ( Z [0] $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var wire 1 , devoe $end
+$var wire 1 - devclrn $end
+$var wire 1 . devpor $end
+$var wire 1 / ww_devoe $end
+$var wire 1 0 ww_devclrn $end
+$var wire 1 1 ww_devpor $end
+$var wire 1 2 ww_A [3] $end
+$var wire 1 3 ww_A [2] $end
+$var wire 1 4 ww_A [1] $end
+$var wire 1 5 ww_A [0] $end
+$var wire 1 6 ww_Z [3] $end
+$var wire 1 7 ww_Z [2] $end
+$var wire 1 8 ww_Z [1] $end
+$var wire 1 9 ww_Z [0] $end
+$var wire 1 : \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 ; \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 < \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 = \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 > \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 ? \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 @ \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 A \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 B \Z[0]~output_o\ $end
+$var wire 1 C \Z[1]~output_o\ $end
+$var wire 1 D \Z[2]~output_o\ $end
+$var wire 1 E \Z[3]~output_o\ $end
+$var wire 1 F \A[0]~input_o\ $end
+$var wire 1 G \A[1]~input_o\ $end
+$var wire 1 H \I1|S~combout\ $end
+$var wire 1 I \A[2]~input_o\ $end
+$var wire 1 J \I2|S~combout\ $end
+$var wire 1 K \A[3]~input_o\ $end
+$var wire 1 L \Z~0_combout\ $end
+$var wire 1 M \ALT_INV_A[0]~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+1*
+x+
+1,
+1-
+1.
+1/
+10
+11
+0?
+z@
+zA
+1B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+1M
+0!
+0"
+0#
+0$
+02
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+0%
+0&
+0'
+1(
+$end
+#40000
+1$
+15
+1F
+0M
+1H
+0B
+1C
+09
+18
+0(
+1'
+#80000
+0$
+1#
+05
+14
+1G
+0F
+1M
+1B
+19
+1(
+#120000
+1$
+15
+1F
+0M
+0H
+1J
+0B
+1D
+0C
+09
+17
+08
+0(
+0'
+1&
+#160000
+0$
+0#
+1"
+05
+04
+13
+1I
+0G
+0F
+1M
+1B
+19
+1(
+#200000
+1$
+15
+1F
+0M
+1H
+0B
+1C
+09
+18
+0(
+1'
+#240000
+0$
+1#
+05
+14
+1G
+0F
+1M
+1B
+19
+1(
+#280000
+1$
+15
+1F
+0M
+0H
+0J
+1L
+0B
+1E
+0D
+0C
+09
+16
+07
+08
+0(
+0'
+0&
+1%
+#320000
+0$
+0#
+0"
+1!
+05
+04
+03
+12
+1K
+0I
+0G
+0F
+1M
+1B
+19
+1(
+#360000
+1$
+15
+1F
+0M
+1H
+0B
+1C
+09
+18
+0(
+1'
+#400000
+0$
+1#
+05
+14
+1G
+0F
+1M
+1B
+19
+1(
+#440000
+1$
+15
+1F
+0M
+0H
+1J
+0B
+1D
+0C
+09
+17
+08
+0(
+0'
+1&
+#480000
+0$
+0#
+1"
+05
+04
+13
+1I
+0G
+0F
+1M
+1B
+19
+1(
+#520000
+1$
+15
+1F
+0M
+1H
+0B
+1C
+09
+18
+0(
+1'
+#560000
+0$
+1#
+05
+14
+1G
+0F
+1M
+1B
+19
+1(
+#600000
+1$
+15
+1F
+0M
+0H
+0J
+0L
+0B
+0E
+0D
+0C
+09
+06
+07
+08
+0(
+0'
+0&
+0%
+#640000
+0$
+0#
+0"
+0!
+05
+04
+03
+02
+0K
+0I
+0G
+0F
+1M
+1B
+19
+1(
+#680000
+1$
+15
+1F
+0M
+1H
+0B
+1C
+09
+18
+0(
+1'
+#720000
+0$
+1#
+05
+14
+1G
+0F
+1M
+1B
+19
+1(
+#760000
+1$
+15
+1F
+0M
+0H
+1J
+0B
+1D
+0C
+09
+17
+08
+0(
+0'
+1&
+#800000
+0$
+0#
+1"
+05
+04
+13
+1I
+0G
+0F
+1M
+1B
+19
+1(
+#840000
+1$
+15
+1F
+0M
+1H
+0B
+1C
+09
+18
+0(
+1'
+#880000
+0$
+1#
+05
+14
+1G
+0F
+1M
+1B
+19
+1(
+#920000
+1$
+15
+1F
+0M
+0H
+0J
+1L
+0B
+1E
+0D
+0C
+09
+16
+07
+08
+0(
+0'
+0&
+1%
+#960000
+0$
+0#
+0"
+1!
+05
+04
+03
+12
+1K
+0I
+0G
+0F
+1M
+1B
+19
+1(
+#1000000

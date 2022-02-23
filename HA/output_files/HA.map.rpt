@@ -1,5 +1,5 @@
 Analysis & Synthesis report for HA
-Thu Feb 17 16:29:12 2022
+Tue Feb 22 18:04:14 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 17 16:29:12 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 22 18:04:14 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; HA                                          ;
 ; Top-level Entity Name              ; HA                                          ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Device                                                           ; 10M50DAF484C6GES   ;                    ;
 ; Top-level entity name                                            ; HA                 ; HA                 ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -168,7 +168,7 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------------+------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path             ; Library ;
 +----------------------------------+-----------------+-----------------------+------------------------------------------+---------+
-; ha.vhd                           ; yes             ; Auto-Found VHDL File  ; C:/Users/aaens/Desktop/Quartus/HA/ha.vhd ;         ;
+; ha.vhd                           ; yes             ; Auto-Found VHDL File  ; C:/Users/aaens/Desktop/TE2002B/HA/ha.vhd ;         ;
 +----------------------------------+-----------------+-----------------------+------------------------------------------+---------+
 
 
@@ -259,14 +259,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 17 16:28:59 2022
+    Info: Processing started: Tue Feb 22 18:04:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off HA -c HA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Warning (12019): Can't analyze file -- file }.vhd is missing
 Warning (12125): Using design file ha.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: HA-ARC File: C:/Users/aaens/Desktop/Quartus/HA/ha.vhd Line: 15
-    Info (12023): Found entity 1: HA File: C:/Users/aaens/Desktop/Quartus/HA/ha.vhd Line: 10
+    Info (12022): Found design unit 1: HA-ARC File: C:/Users/aaens/Desktop/TE2002B/HA/ha.vhd Line: 15
+    Info (12023): Found entity 1: HA File: C:/Users/aaens/Desktop/TE2002B/HA/ha.vhd Line: 10
 Info (12127): Elaborating entity "HA" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -276,9 +276,9 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Thu Feb 17 16:29:12 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Tue Feb 22 18:04:14 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
 
 

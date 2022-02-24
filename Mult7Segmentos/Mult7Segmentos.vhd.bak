@@ -1,0 +1,30 @@
+-- Multiplicador Completo 4 bits/7 Segmentos --
+-- Aquiles Ensminger 								--
+-- A01781243 											--
+
+library IEEE;
+use IEEE.std_logic_1164.ALL;
+
+Entity Mult7Segmentos is
+	port (Entrada: in std_logic_vector(7 downto 0);
+			S1,S2: in std_logic;
+			Salida1: out std_logic_vector(6 downto 0);
+			Salida2: out std_logic_vector(8 downto 0));
+end Mult7Segmentos;
+
+architecture ARC of MUlt7Segmentos is
+
+component MultCompleto is
+	port (A,B: in std_logic_vector(3 downto 0);
+			Multiplicacion: out std_logic_vector(7 downto 0));
+end component MultCompleto;
+
+component Decoder7segmentos is
+	port(S: in std_logic_vector(3 downto 0);
+		  a,b,c,d,e,f,g: out std_logic);
+end component Decoder7segmentos;
+
+component DecoderRayita is
+	port(D: in std_logic;
+		  b,c: out std_logic);
+end component DecoderRayita;

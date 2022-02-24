@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ANDS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ANDS[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

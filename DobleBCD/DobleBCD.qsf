@@ -61,9 +61,31 @@ set_global_assignment -name VHDL_FILE DobleBCD.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_location_assignment PIN_C12 -to Entrada1[3]
 set_location_assignment PIN_F15 -to Cin
-set_location_assignment PIN_D12 -to Entrada1[2]
-set_location_assignment PIN_C11 -to Entrada1[1]
-set_location_assignment PIN_C10 -to Entrada1[0]
+set_location_assignment PIN_C10 -to Entrada[0]
+set_location_assignment PIN_C11 -to Entrada[1]
+set_location_assignment PIN_D12 -to Entrada[2]
+set_location_assignment PIN_C12 -to Entrada[3]
+set_location_assignment PIN_A12 -to Entrada[4]
+set_location_assignment PIN_B12 -to Entrada[5]
+set_location_assignment PIN_A13 -to Entrada[6]
+set_location_assignment PIN_A14 -to Entrada[7]
+set_location_assignment PIN_B8 -to S1
+set_location_assignment PIN_A7 -to S2
+set_location_assignment PIN_C14 -to Salida1[0]
+set_location_assignment PIN_E15 -to Salida1[1]
+set_location_assignment PIN_C15 -to Salida1[2]
+set_location_assignment PIN_C16 -to Salida1[3]
+set_location_assignment PIN_E16 -to Salida1[4]
+set_location_assignment PIN_D17 -to Salida1[5]
+set_location_assignment PIN_C17 -to Salida1[6]
+set_location_assignment PIN_C18 -to Salida2[0]
+set_location_assignment PIN_D18 -to Salida2[1]
+set_location_assignment PIN_E18 -to Salida2[2]
+set_location_assignment PIN_B16 -to Salida2[3]
+set_location_assignment PIN_A17 -to Salida2[4]
+set_location_assignment PIN_A18 -to Salida2[5]
+set_location_assignment PIN_B17 -to Salida2[6]
+set_location_assignment PIN_A20 -to Salida2[7]
+set_location_assignment PIN_B19 -to Salida2[8]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

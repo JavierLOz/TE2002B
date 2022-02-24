@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DobleBCD
-Mon Feb 21 17:43:31 2022
+Wed Feb 23 18:29:30 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 21 17:43:31 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb 23 18:29:30 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DobleBCD                                    ;
 ; Top-level Entity Name              ; DobleBCD                                    ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 49                                          ;
+; Total logic elements               ; 65                                          ;
 ;     Total combinational functions  ; 49                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 35                                          ;
+;     Dedicated logic registers      ; 16                                          ;
+; Total registers                    ; 16                                          ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -185,7 +185,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------+
 ; Resource                                    ; Usage                             ;
 +---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 49                                ;
+; Estimated Total logic elements              ; 65                                ;
 ;                                             ;                                   ;
 ; Total combinational functions               ; 49                                ;
 ; Logic element usage by number of LUT inputs ;                                   ;
@@ -197,18 +197,18 @@ refer to the applicable agreement for further details.
 ;     -- normal mode                          ; 49                                ;
 ;     -- arithmetic mode                      ; 0                                 ;
 ;                                             ;                                   ;
-; Total registers                             ; 0                                 ;
-;     -- Dedicated logic registers            ; 0                                 ;
+; Total registers                             ; 16                                ;
+;     -- Dedicated logic registers            ; 16                                ;
 ;     -- I/O registers                        ; 0                                 ;
 ;                                             ;                                   ;
-; I/O pins                                    ; 35                                ;
+; I/O pins                                    ; 27                                ;
 ;                                             ;                                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                                 ;
 ;                                             ;                                   ;
 ; Maximum fan-out node                        ; BCD:I0|masSeis:I2|FA:I1|HA:I1|S~0 ;
 ; Maximum fan-out                             ; 10                                ;
-; Total fan-out                               ; 226                               ;
-; Average fan-out                             ; 1.90                              ;
+; Total fan-out                               ; 250                               ;
+; Average fan-out                             ; 2.10                              ;
 +---------------------------------------------+-----------------------------------+
 
 
@@ -217,7 +217,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                     ; Entity Name       ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------+-------------------+--------------+
-; |DobleBCD                  ; 49 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |DobleBCD                               ; DobleBCD          ; work         ;
+; |DobleBCD                  ; 49 (0)              ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 27   ; 0            ; 0          ; |DobleBCD                               ; DobleBCD          ; work         ;
 ;    |BCD:I0|                ; 12 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DobleBCD|BCD:I0                        ; BCD               ; work         ;
 ;       |Ajuste:I1|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DobleBCD|BCD:I0|Ajuste:I1              ; Ajuste            ; work         ;
 ;       |RC4:I0|             ; 7 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DobleBCD|BCD:I0|RC4:I0                 ; RC4               ; work         ;
@@ -257,7 +257,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 16    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -272,17 +272,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 35                          ;
-; cycloneiii_lcell_comb ; 51                          ;
-;     normal            ; 51                          ;
-;         0 data inputs ; 1                           ;
+; boundary_port         ; 27                          ;
+; cycloneiii_ff         ; 16                          ;
+;     plain             ; 16                          ;
+; cycloneiii_lcell_comb ; 50                          ;
+;     normal            ; 50                          ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 17                          ;
 ;         4 data inputs ; 30                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 8.66                        ;
+; Average LUT depth     ; 7.65                        ;
 +-----------------------+-----------------------------+
 
 
@@ -301,7 +302,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Feb 21 17:43:20 2022
+    Info: Processing started: Wed Feb 23 18:29:19 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DobleBCD -c DobleBCD
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -330,32 +331,28 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
     Info (12022): Found design unit 1: BCD-ARC File: C:/Users/aaens/Desktop/TE2002B/BCD/BCD.vhd Line: 16
     Info (12023): Found entity 1: BCD File: C:/Users/aaens/Desktop/TE2002B/BCD/BCD.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file doblebcd.vhd
-    Info (12022): Found design unit 1: DobleBCD-ARC File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 15
+    Info (12022): Found design unit 1: DobleBCD-ARC File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 16
     Info (12023): Found entity 1: DobleBCD File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 9
 Info (12127): Elaborating entity "DobleBCD" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "Salida1[8..7]" at DobleBCD.vhd(12) File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 12
-Info (12128): Elaborating entity "BCD" for hierarchy "BCD:I0" File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 41
+Info (12128): Elaborating entity "BCD" for hierarchy "BCD:I0" File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 58
 Info (12128): Elaborating entity "RC4" for hierarchy "BCD:I0|RC4:I0" File: C:/Users/aaens/Desktop/TE2002B/BCD/BCD.vhd Line: 45
 Info (12128): Elaborating entity "FA" for hierarchy "BCD:I0|RC4:I0|FA:I0" File: C:/Users/aaens/Desktop/TE2002B/RC4/RC4.vhd Line: 27
 Info (12128): Elaborating entity "HA" for hierarchy "BCD:I0|RC4:I0|FA:I0|HA:I0" File: C:/Users/aaens/Desktop/TE2002B/FA/FA.vhd Line: 24
 Info (12128): Elaborating entity "Ajuste" for hierarchy "BCD:I0|Ajuste:I1" File: C:/Users/aaens/Desktop/TE2002B/BCD/BCD.vhd Line: 46
 Info (12128): Elaborating entity "masSeis" for hierarchy "BCD:I0|masSeis:I2" File: C:/Users/aaens/Desktop/TE2002B/BCD/BCD.vhd Line: 47
-Info (12128): Elaborating entity "Decoder7segmentos" for hierarchy "Decoder7segmentos:I2" File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 43
-Info (12128): Elaborating entity "DecoderRayita" for hierarchy "DecoderRayita:I4" File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 45
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Salida1[7]" is stuck at GND File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 12
-    Warning (13410): Pin "Salida1[8]" is stuck at GND File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 12
+Info (12128): Elaborating entity "Decoder7segmentos" for hierarchy "Decoder7segmentos:I2" File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 60
+Info (12128): Elaborating entity "DecoderRayita" for hierarchy "DecoderRayita:I4" File: C:/Users/aaens/Desktop/TE2002B/DobleBCD/DobleBCD.vhd Line: 62
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 17 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 49 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Mon Feb 21 17:43:31 2022
+Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 65 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Wed Feb 23 18:29:30 2022
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:22
 
 
